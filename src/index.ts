@@ -16,7 +16,10 @@ app.use("/api/question", questionRoutes);
 app.use(cors);
 const start = async () => {
   console.log("Connecting to database...");
-  await mongoose.connect(MONGO_URI);
+  await mongoose.connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
   console.log("Database is connected !");
   await app.listen(PORT);
   console.log(`Server started , listining on port  ${PORT}`);

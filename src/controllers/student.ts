@@ -8,8 +8,11 @@ interface RequestWithBody extends Request {
 export const createStudent = (req: RequestWithBody, res: Response) => {
   console.log(req.body);
   let { name } = req.body;
-  const student: IStudent = new Student({
+  new Student({
     name,
+  }).save((err, object) => {
+    const student: IStudent = object;
+
+    res.json({ id: encodeId("Student", student.id), name });
   });
-  res.json({ id: encodeId("Student", student.id), name });
 };

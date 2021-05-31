@@ -11,5 +11,4 @@ const QuestionSchema = new mongoose.Schema(
     ...schemaJsonTransform("Question"),
   }
 );
-
 export const Question = mongoose.model<IQuestion>("Question", QuestionSchema);

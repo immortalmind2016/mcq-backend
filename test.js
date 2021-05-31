@@ -10,6 +10,6 @@ let shuffle = (arr) => {
     let rand = Math.floor(Math.random() * arr.length);
     set.add(arr[rand]);
   }
-  console.log(set);
+  console.log(Array.from(set));
 };
 shuffle(arr);
