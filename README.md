@@ -10,8 +10,7 @@ It was implemented by :
 - REST-Full APIs
 - Node.js
 - Express.js
-
-  Deployed to Heroku
+- Deployed to Heroku
 
 ## Production test
 
