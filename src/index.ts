@@ -8,7 +8,7 @@ import questionRoutes from "./routes/question";
 import examRoutes from "./routes/exam";
 
 import { config } from "./config";
-const { MONGO_URI, PORT } = config;
+let { MONGO_URI, PORT } = config;
 
 const app = express();
 app.use(cors());
@@ -29,6 +29,7 @@ const start = async () => {
     useUnifiedTopology: true,
   });
   console.log("Database is connected !");
+
   await app.listen(PORT);
   console.log(`Server started , listining on port  ${PORT}`);
 };
