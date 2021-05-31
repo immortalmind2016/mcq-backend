@@ -1,5 +1,16 @@
 {
     "compilerOptions": {
-        "esModuleInterop": true
-    }
-}
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "module": "CommonJS",
+      "esModuleInterop": true,
+      "declaration": true,
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "resolveJsonModule": true
+    },
+    "lib": ["es2015"],
+    "exclude": ["public", "dist"]
+  }
+  

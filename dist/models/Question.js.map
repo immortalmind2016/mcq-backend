@@ -1,0 +1,1 @@
+{"version":3,"file":"Question.js","sourceRoot":"","sources":["../../src/models/Question.ts"],"names":[],"mappings":";;;;;;AAAA,wDAAgC;AAEhC,sEAAmE;AACnE,MAAM,cAAc,GAAG,IAAI,kBAAQ,CAAC,MAAM,CACxC;IACE,WAAW,EAAE,MAAM;IACnB,OAAO,EAAE,KAAK,EAAE;IAChB,kBAAkB,EAAE,MAAM;CAC3B,oBAEI,yCAAmB,CAAC,UAAU,CAAC,EAErC,CAAC;AACW,QAAA,QAAQ,GAAG,kBAAQ,CAAC,KAAK,CAAY,UAAU,EAAE,cAAc,CAAC,CAAC"}

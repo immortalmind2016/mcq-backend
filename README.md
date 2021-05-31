@@ -1,3 +1,21 @@
+# Production test
+
+### https://mcqmaster.herokuapp.com/
+
+## Installation
+
+### `yarn`
+
+## Start in dev mode
+
+### `yarn start:dev`
+
+## Start
+
+### `yarn build`
+
+### `yarn start`
+
 ## Utils
 
 #### ecoding and decoding
@@ -17,3 +35,7 @@
 ## Typing (typescript)
 
 - We can enhance typing more but we have no time :D
+
+#### Notes
+
+- we can add dockerFile but there's no time too :D
