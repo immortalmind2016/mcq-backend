@@ -19,7 +19,6 @@ app.use("/api/exam", examRoutes);
 
 app.use(express.static("public"));
 app.get("*", (req, res) => {
-  return res.send("hi");
   return res.sendFile(path.resolve(__dirname, "..", "public", "index.html"));
 });
 const start = async () => {
