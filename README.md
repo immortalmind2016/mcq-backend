@@ -1,4 +1,19 @@
-# Production test
+# Description
+
+### mcq-backend is a website that allows users to create an exam and subsequently see their score.
+
+It was implemented by :
+
+- Typescript
+- React.js (Redux and Hooks)
+- Mongoose
+- REST-Full APIs
+- Node.js
+- Express.js
+
+  Deployed to Heroku
+
+## Production test
 
 ### https://mcqmaster.herokuapp.com/
 
