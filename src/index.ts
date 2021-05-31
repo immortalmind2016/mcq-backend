@@ -5,6 +5,8 @@ import cors from "cors";
 
 import studentRoutes from "./routes/student";
 import questionRoutes from "./routes/question";
+import examRoutes from "./routes/exam";
+
 import { config } from "./config";
 const { MONGO_URI, PORT } = config;
 
@@ -13,6 +15,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/student", studentRoutes);
 app.use("/api/question", questionRoutes);
+app.use("/api/exam", examRoutes);
+
 app.use(cors);
 const start = async () => {
   console.log("Connecting to database...");
