@@ -10,15 +10,14 @@
     "dotenv": "^10.0.0",
     "envalid": "^7.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.12.12"
+    "mongoose": "^5.12.12",
+    "tsc": "^2.0.3"
   },
   "scripts": {
     "start:dev": "ts-node ./src/index.ts",
     "start": "node dist/index.js",
     "build": "yarn build:ts",
     "build:ts": "tsc -p tsconfig.json"
-
-
   },
   "engines": {
     "node": "14.x"
