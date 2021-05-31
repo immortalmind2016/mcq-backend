@@ -28,7 +28,11 @@ app.use(body_parser_1.default.json());
 app.use("/api/student", student_1.default);
 app.use("/api/question", question_1.default);
 app.use("/api/exam", exam_1.default);
-app.use(cors_1.default);
+app.use(express_1.default.static("public"));
+app.get("*", (req, res) => {
+    return res.send("hi");
+    return res.sendFile(path_1.default.resolve(__dirname, "..", "public", "index.html"));
+});
 const start = () => __awaiter(void 0, void 0, void 0, function* () {
     console.log("Connecting to database...");
     yield mongoose_1.default.connect(MONGO_URI, {
@@ -38,10 +42,6 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
     console.log("Database is connected !");
     yield app.listen(PORT);
     console.log(`Server started , listining on port  ${PORT}`);
-});
-app.use(express_1.default.static("public"));
-app.get("*", (req, res) => {
-    return res.sendFile(path_1.default.resolve(__dirname, "..", "public", "index.html"));
 });
 start();
 //# sourceMappingURL=index.js.map

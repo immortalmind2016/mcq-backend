@@ -19,5 +19,8 @@
     "build:ts": "tsc -p tsconfig.json"
 
 
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
