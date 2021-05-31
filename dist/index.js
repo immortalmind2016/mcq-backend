@@ -21,7 +21,7 @@ const student_1 = __importDefault(require("./routes/student"));
 const question_1 = __importDefault(require("./routes/question"));
 const exam_1 = __importDefault(require("./routes/exam"));
 const config_1 = require("./config");
-const { MONGO_URI, PORT } = config_1.config;
+let { MONGO_URI, PORT } = config_1.config;
 const app = express_1.default();
 app.use(cors_1.default());
 app.use(body_parser_1.default.json());
@@ -30,7 +30,6 @@ app.use("/api/question", question_1.default);
 app.use("/api/exam", exam_1.default);
 app.use(express_1.default.static("public"));
 app.get("*", (req, res) => {
-    return res.send("hi");
     return res.sendFile(path_1.default.resolve(__dirname, "..", "public", "index.html"));
 });
 const start = () => __awaiter(void 0, void 0, void 0, function* () {
